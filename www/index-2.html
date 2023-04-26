@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Vaga</title>
+    <link rel="stylesheet" href="css/style-2.css">
+    <script src="components/script.js"defer></script>
+    <script src="components/compra.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo do estacionamento">
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a ></li>
+                    <li class="nav-item"><a class="nav-link " href="index-1.html">Tabela de Preços</a ></li>
+                    <li class="nav-item"><a class="nav-link selected" href="index-2.html">Reservar Vaga</a ></li>
+                
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+            <button id="btn"><img id="icon"src="img/menu.svg" alt="icone do menu"></button>
+        </div>
+        </nav>
+        <!---MOBILE MENU-->
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a ></li>
+                <li class="nav-item"><a class="nav-link " href="index-1.html">Tabela de Preços</a ></li>
+                <li class="nav-item"><a class="nav-link selected" href="#">Reservar Vaga</a ></li>
+            
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="form-box">
+         <input type="text" id="placa" minlength="7"maxlength="7"placeholder="PLACA DO VEÍCULO"required>
+         <select name="modelo" id="modelo" required>
+         <option value="" disabled selected hidden>TIPO DO VEÍCULO</option>
+         <option value="3.50">Subcompacto</option>
+         <option value="4">Compacto</option>
+         <option value="4.5">Hatch</option>
+         <option value="5">Sedan</option>
+         <option value="6">SUV</option>
+         <option value="7">Pick-Up</option>
+        </select>
+         <select name="horas" id="horas" required>
+             <option value="" disabled selected hidden>HORAS</option>
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+         </select>
+         <input id="btn3" type="button" value="Enviar">
+</div>
+         <!----------------------- RESULTADO DA COMPRA ------------------->
+         <div class="valor">
+         <div class="resultado">
+             <p>
+                 VALOR FINAL:  <span id="texto"></span>
+             </p>
+         </div>
+         <div class="compra">
+             <input id="btn-2"type="button" value="Mais uma compra?">
+         </div>
+        </div>
+    </div>
+
+    </body>
+    </html>
